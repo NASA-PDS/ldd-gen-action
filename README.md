@@ -10,12 +10,12 @@ See the [PDS Data Dictionaries repo](https://pds-data-dictionaries.github.io/) f
 
 To use this action in your own workflow, just provide it `with` the following parameters:
 
-  datapath - Absolute path to where the PDS4 IngestLDD should be deployed (required: true)
-  pds4_im_version: PDS4 Information Model Version. Defaults to the latest version. Use the semantic version, e.g. 1.14.0.0 (default: 'latest')
-  schemas: Path(s) to schemas to use for validation. By default, validate will use the schemas specified in the PDS4 labels.
-  schematrons: Path(s) to schematrons to use for validation. By default, validate will use the schemas specified in the PDS4 labels.
-    required: false
-  github_token: Github secret token
+- `datapath` - Absolute path to where the PDS4 IngestLDD should be deployed (required: true)
+- `pds4_im_version` - PDS4 Information Model Version. Defaults to the latest version. Use the semantic version, e.g. 1.14.0.0 (default: 'latest')
+- `schemas` - Path(s) to schemas to use for validation. By default, validate will use the schemas specified in the PDS4 labels.
+- `schematrons` - Path(s) to schematrons to use for validation. By default, validate will use the schemas specified in the PDS4 labels.
+- `required` - false
+- `github_token` - Github secret token
 
 
 

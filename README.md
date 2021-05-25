@@ -1,4 +1,4 @@
-# PDS LDD Generation
+# 🤠 PDS Engineering Actions: Local Data Dictionary Roundup
 
 This is an [action for GitHub](https://github.com/features/actions) that generates a PDS4 Local
 Data Dictionary from an input IngestLDD, and validates the output against regression test suite (if it exists).

@@ -135,3 +135,9 @@ runs:
         done
       shell: bash
 
+    - run: |
+        # Upload logs to Github
+        git add -A ${{inputs.logs_path}}
+        git commit -m "Add LDDTool and Validate logs"
+        git push origin HEAD
+      shell: bash

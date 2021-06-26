@@ -5,13 +5,6 @@ Data Dictionary from an input IngestLDD, and validates the output against regres
 
 See the [PDS Data Dictionaries repo](https://pds-data-dictionaries.github.io/) for more details.
 
-## Dependencies
-The following Python dependencies are required to use this action:
-```bash
-python -m pip install --upgrade pip setuptools wheel
-python -m pip install pds-github-util
-```
-
 ## ℹ️ Using this Action
 
 To use this action in your own workflow, just provide it `with` the following parameters:

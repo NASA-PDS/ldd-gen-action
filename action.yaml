@@ -134,10 +134,3 @@ runs:
           pds4-validate --failure_expected --datapath "$file" $skip_content_validation --with_pds4_version ${{inputs.pds4_im_version}} --schemas "${{inputs.data_path}}/*.xsd" --schematrons "${{inputs.data_path}}/*.sch" --token ${{inputs.token}} --output_log_path ${{inputs.logs_path}} $dev_release
         done
       shell: bash
-
-    - run: |
-        # Upload logs to Github
-        git add -A ${{inputs.logs_path}}
-        git commit -m "Add LDDTool and Validate logs"
-        git push origin HEAD
-      shell: bash

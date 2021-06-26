@@ -55,6 +55,9 @@ runs:
 
   steps:
     - run: |
+       python -m pip install --upgrade pip setuptools wheel
+       python -m pip install pds-github-util
+    - run: |
         dev_release=""
         if [ "${{inputs.lddtool_development_release}}" == "true" ]; then
           dev_release="--use_lddtool_unstable --with_pds4_version ${{inputs.pds4_im_version}}"

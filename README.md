@@ -1,9 +1,9 @@
-# 🤠 PDS Engineering Actions: Local Data Dictionary Roundup
+# 🤠 PDS Engineering Actions: PDS4 Sub-Model Roundup
 
 This is an [action for GitHub](https://github.com/features/actions) that generates a PDS4 Local
 Data Dictionary from an input IngestLDD, and validates the output against regression test suite (if it exists).
 
-See the [PDS Data Dictionaries repo](https://pds-data-dictionaries.github.io/) for more details.
+See the [PDS Sub-Models Org](https://pds-data-dictionaries.github.io/) for more details.
 
 ## ℹ️ Using this Action
 

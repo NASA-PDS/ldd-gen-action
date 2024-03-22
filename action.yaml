@@ -63,7 +63,7 @@ runs:
             dir=$(find src -type d -name "ldd-*" | tail -1)
          done
          echo "No more submodules to process"
-
+      shell: bash
     - run: |
        python -m pip install --upgrade pip setuptools==57.5.0 wheel
        

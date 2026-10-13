@@ -73,6 +73,11 @@ runs:
         ldd-generate --ingest_ldd_src_dir $GITHUB_WORKSPACE/src --ldd_output_path "${{inputs.data_path}}" --with_pds4_version "${{inputs.pds4_im_version}}" --token ${{inputs.token}} --output_log_path ${{inputs.logs_path}} $dev_release
       shell: bash
 
+    - uses: actions/setup-java@v4
+      with:
+        java-version: '25'
+        distribution: 'temurin'
+
     - run: |
         echo "+++++ Run Validate to Check Schemas/Schematrons and Regression Tests +++++"
         dev_release=""

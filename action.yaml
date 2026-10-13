@@ -7,6 +7,7 @@
 
 name: '✅ PDS LDD Generation'
 author: 'Jordan Padams <jordan.h.padams@jpl.nasa.gov>'
+description: "PDS LDD generation action"
 branding:
   icon: 'archive'
   color: 'green'
@@ -73,7 +74,7 @@ runs:
         ldd-generate --ingest_ldd_src_dir $GITHUB_WORKSPACE/src --ldd_output_path "${{inputs.data_path}}" --with_pds4_version "${{inputs.pds4_im_version}}" --token ${{inputs.token}} --output_log_path ${{inputs.logs_path}} $dev_release
       shell: bash
 
-    - uses: actions/setup-java@v4
+    - uses: actions/setup-java@v6
       with:
         java-version: '25'
         distribution: 'temurin'
